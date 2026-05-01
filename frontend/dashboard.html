@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>Task Manager</h2>
+    <button onclick="loadTasks()">All Tasks</button>
+    <button onclick="filterTasks('Pending')">Pending</button>
+    <button onclick="filterTasks('Done')">Done</button>
+  </div>
+
+  <div class="main">
+    <h2>Dashboard</h2>
+
+    <div class="add-task">
+      <input id="task" placeholder="New Task">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div id="tasks" class="task-grid"></div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
